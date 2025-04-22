@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filière IDSD</title>
+    <link rel="stylesheet" href="assets/css/details.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area">
+        <nav>
+            <!-- ***** Menu Start ***** -->
+            <!-- ***** Logo Start ***** -->
+            <ul class="logo_container">
+                <li><a href="#"><img src="assets/images/esen-manouba.png" alt="Logo" class="logo"></a></li>
+            </ul>
+            <!-- ***** Logo End ***** -->
+            <ul class="nav">
+                <li><a href="index.html" class="active">A propos</a></li>
+                <li><a href="">Actualités</a></li>
+                <li><a href="">Métiers</a></li>
+                <li><a href="">Formations</a></li>
+            </ul> 
+            <!-- ***** Menu End ***** -->
+        </nav>
+  </header>
+  <!-- ***** Header Area End ***** -->
+<div id="fiche-etudiant">
+
+<script>
+const params = new URLSearchParams(window.location.search);
+const id = params.get('id');
+
+fetch('premiere_annee.xml') 
+.then(response => response.text())
+.then(str => (new window.DOMParser()).parseFromString(str, "text/xml"))
+.then(xml => {
+        const etudiants = xml.getElementsByTagName('etudiant');
+        for (let etu of etudiants) {
+            if (etu.getAttribute('id') === id) {
+                    const nom = etu.getElementsByTagName('nom')[0].textContent;
+                const image = etu.getElementsByTagName('image')[0].textContent;
+                const niveau = etu.getElementsByTagName('niveau')[0].textContent;
+                const date = etu.getElementsByTagName('dateNaissance')[0].textContent;
+                const email = etu.getElementsByTagName('email')[0].textContent;
+
+                const linkedin = etu.getElementsByTagName('linkedin')[0]?.textContent || '#';
+                const instagram = etu.getElementsByTagName('instagram')[0]?.textContent || '#';
+                const facebook = etu.getElementsByTagName('facebook')[0]?.textContent || '#';
+
+                const container = document.getElementById('fiche-etudiant');
+                container.style.display = 'block';
+                container.innerHTML = `
+                        <div class="fiche-container">
+                                <div class="info-section">
+                                        <img src="${image}" alt="${nom}" class="student-image">
+                                        <h2>${nom}</h2>
+                                        <p><strong>Niveau :</strong> <span>${niveau}</span></p>
+                                        <p><strong>Naissance :</strong> <span>${date}</span></p>
+                                        <p><strong>Email :</strong> <span>${email}</span></p>
+                                        <div class="social-links">
+                                                <a href="${linkedin}" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                                <a href="${instagram}" target="_blank"><i class="fab fa-instagram"></i></a>
+                                                <a href="${facebook}" target="_blank"><i class="fab fa-facebook"></i></a>
+                                        </div>
+                                </div>
+                                <div class="table-section">
+                                        <table>
+                                                <thead>
+                                                        <tr>
+                                                                <th>Matière</th>
+                                                                <th>Note</th>
+                                                        </tr>
+                                                </thead>
+                                                <tbody>
+                                                </tbody>
+                                        </table>
+                                </div>
+
+                        </div>
+                `;
+
+                const matieres = etu.getElementsByTagName('matiere');
+                const tbody = container.querySelector('.table-section tbody');
+                for (let matiere of matieres) {
+                        const nomMatiere = matiere.getElementsByTagName('nom')[0].textContent;
+                        const note = matiere.getElementsByTagName('note')[0].textContent;
+                        const row = document.createElement('tr');
+                        row.innerHTML = `
+                                <td>${nomMatiere}</td>
+                                <td>${note}</td>
+                        `;
+                        tbody.appendChild(row);
+                }
+                break;
+            }
+        }
+})
+            .catch(err => console.error("Erreur XML:", err));
+    </script>
+</div>
+
+</body>
+</html>    
