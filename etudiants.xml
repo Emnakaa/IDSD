@@ -183,7 +183,7 @@
     <etudiant id="5" niveau="2">
         <nom>Adem Ghorbel</nom>
         <moyenne>15.8</moyenne>
-        <image>assets/images/dhia.jpeg</image>
+        <image>assets/images/ghorbel.png</image>
         <niveau>2ème année IDSD</niveau>
         <dateNaissance>2000-07-15</dateNaissance>
         <email>adem.ghorbel@example.com</email>
@@ -227,7 +227,7 @@
     </etudiant>
     <etudiant id="6" niveau="2">
         <nom>Adem Khabou</nom>
-        <moyenne>16.2</moyenne>
+        <moyenne>20</moyenne>
         <image>assets/images/dhia.jpeg</image>
         <niveau>2ème année IDSD</niveau>
         <dateNaissance>2000-08-20</dateNaissance>
