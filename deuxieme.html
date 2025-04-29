@@ -44,7 +44,7 @@
   </table>
 
   <script>
-    fetch('deuxieme_annee.xml')
+    fetch('etudiants.xml')
       .then(response => response.text())
       .then(str => (new window.DOMParser()).parseFromString(str, "text/xml"))
       .then(data => {
@@ -52,15 +52,17 @@
         const tableRow = document.querySelector(".student-table tr");
 
         for (let i = 0; i < etudiants.length; i++) {
+            if (etudiants[i].getAttribute('niveau') == '2') {
+
           const nom = etudiants[i].getElementsByTagName('nom')[0].textContent;
           const moyenne = etudiants[i].getElementsByTagName('moyenne')[0].textContent;
           const image = etudiants[i].getElementsByTagName('image')[0].textContent;
-
+          const id=etudiants[i].getAttribute('id')
           const td = document.createElement('td');
           td.className = 'students';
           td.innerHTML = `
             <div class="card">
-              <img src="${image}" alt="${nom}">
+              <a href="details.html?id=${id}"><img src="${image}" alt="${nom}"></a>
               <h3>${nom}</h3>
               <p>Moyenne : ${moyenne}</p>
               <div class="social">
@@ -72,7 +74,7 @@
           `;
           tableRow.appendChild(td);
         }
-      })
+      }})
       .catch(err => console.error("Erreur de chargement du fichier XML:", err));
   </script>
 
