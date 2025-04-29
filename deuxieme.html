@@ -45,11 +45,21 @@
   </table>
 
   <script>
-    fetch('etudiants.xml')
-      .then(response => response.text())
-      .then(str => (new window.DOMParser()).parseFromString(str, "text/xml"))
-      .then(data => {
-        const etudiants = data.getElementsByTagName('etudiant');
+    const xmlFilePath = 'assets/data/etudiants.xml'; 
+
+    fetch(xmlFilePath)
+      .then(response => {
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.text();
+      })
+      .then(xmlText => {
+        const parser = new DOMParser();
+        const xmlDoc = parser.parseFromString(xmlText, 'application/xml');
+        console.log(xmlDoc); 
+
+        const etudiants = xmlDoc.getElementsByTagName('etudiant');
         const tableRow = document.querySelector(".student-table tr");
 
         for (let i = 0; i < etudiants.length; i++) {
@@ -76,7 +86,9 @@
           tableRow.appendChild(td);
         }
       }})
-      .catch(err => console.error("Erreur de chargement du fichier XML:", err));
+      .catch(error => {
+        console.error('Error fetching the XML file:', error);
+      });
   </script>
 
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>

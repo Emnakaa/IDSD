@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body{  
     font-family: Arial, sans-serif;
     background-color: #ffffff54;
@@ -19,7 +23,10 @@ nav {
     z-index: 1000; /* Ensure the header is above other content */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
-
+.nav a.active {
+  color: #ff5722; 
+  font-weight: bold;
+}
 nav .nav{
     width: 50%;
     float: right;
@@ -542,7 +549,7 @@ KPIS Style
       color: #0099ff; /* Specific color for stats icons */
       margin-bottom: 15px; /* Space below the icon */
     }
-  
+
 
 
 
