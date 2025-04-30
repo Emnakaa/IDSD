@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<etudiants>
+    <etudiant id="1" niveau="1">
+        <nom>Dhia Mazhoud</nom>
+        <moyenne>15.5</moyenne>
+        <image>../assets/images/dhia.jpeg</image>
+        <niveau>1ère année IDSD</niveau>
+        <dateNaissance>2000-05-15</dateNaissance>
+        <email>dhia.mazhoud@example.com</email>
+        <linkedin>https://www.linkedin.com/in/dhia-mazhoud</linkedin>
+        <instagram>https://www.instagram.com/dhia.mazhoud</instagram>
+        <facebook>https://www.facebook.com/dhia.mazhoud</facebook>
+        <matieres>
+            <matiere>
+                <nom>Developpement Web</nom>
+                <note>16</note>
+            </matiere>
+            <matiere>
+                <nom>Theorie de l'incertain</nom>
+                <note>14</note>
+            </matiere>
+            <matiere>
+                <nom>Java</nom>
+                <note>15</note>
+            </matiere>
+            <matiere>
+                <nom>Langage C</nom>
+                <note>17</note>
+            </matiere>
+            <matiere>
+                <nom>AI</nom>
+                <note>16</note>
+            </matiere>
+            <matiere>
+                <nom>Modele Lineaire</nom>
+                <note>15</note>
+            </matiere>
+            <matiere>
+                <nom>Analyse Numerique</nom>
+                <note>14</note>
+            </matiere>
+            <matiere>
+                <nom>Programmation Lineaire</nom>
+                <note>16</note>
+            </matiere>
+        </matieres>
+    </etudiant>
+    <etudiant id="2" niveau="1">
+        <nom>Anouar Naifer</nom>
+        <moyenne>17.2</moyenne>
+        <image>../assets/images/anouar.jpeg</image>
+        <niveau>1ère année IDSD</niveau>
+        <dateNaissance>1999-11-20</dateNaissance>
+        <email>anouar.naifer@example.com</email>
+        <linkedin>https://www.linkedin.com/in/anouar-naifer</linkedin>
+        <instagram>https://www.instagram.com/anouar.naifer</instagram>
+        <facebook>https://www.facebook.com/anouar.naifer</facebook>
+        <matieres>
+            <matiere>
+                <nom>Developpement Web</nom>
+                <note>18</note>
+            </matiere>
+            <matiere>
+                <nom>Theorie de l'incertain</nom>
+                <note>17</note>
+            </matiere>
+            <matiere>
+                <nom>Java</nom>
+                <note>16</note>
+            </matiere>
+            <matiere>
+                <nom>Langage C</nom>
+                <note>18</note>
+            </matiere>
+            <matiere>
+                <nom>AI</nom>
+                <note>17</note>
+            </matiere>
+            <matiere>
+                <nom>Modele Lineaire</nom>
+                <note>16</note>
+            </matiere>
+            <matiere>
+                <nom>Analyse Numerique</nom>
+                <note>17</note>
+            </matiere>
+            <matiere>
+                <nom>Programmation Lineaire</nom>
+                <note>18</note>
+            </matiere>
+        </matieres>
+    </etudiant>
+    <etudiant id="3" niveau="1">
+        <nom>Yessine Bouattour</nom>
+        <moyenne>14.8</moyenne>
+        <image>../assets/images/yessine.jpeg</image>
+        <niveau>1ère année IDSD</niveau>
+        <dateNaissance>2001-03-10</dateNaissance>
+        <email>yessine.bouattour@example.com</email>
+        <linkedin>https://www.linkedin.com/in/yessine-bouattour</linkedin>
+        <instagram>https://www.instagram.com/yessine.bouattour</instagram>
+        <facebook>https://www.facebook.com/yessine.bouattour</facebook>
+        <matieres>
+            <matiere>
+                <nom>Developpement Web</nom>
+                <note>14</note>
+            </matiere>
+            <matiere>
+                <nom>Theorie de l'incertain</nom>
+                <note>13</note>
+            </matiere>
+            <matiere>
+                <nom>Java</nom>
+                <note>15</note>
+            </matiere>
+            <matiere>
+                <nom>Langage C</nom>
+                <note>14</note>
+            </matiere>
+            <matiere>
+                <nom>AI</nom>
+                <note>15</note>
+            </matiere>
+            <matiere>
+                <nom>Modele Lineaire</nom>
+                <note>14</note>
+            </matiere>
+            <matiere>
+                <nom>Analyse Numerique</nom>
+                <note>13</note>
+            </matiere>
+            <matiere>
+                <nom>Programmation Lineaire</nom>
+                <note>14</note>
+            </matiere>
+        </matieres>
+    </etudiant>
+    <etudiant id="4" niveau="2">
+        <nom>Adem Taktek</nom>
+        <moyenne>16.0</moyenne>
+        <image>../assets/images/dhia.jpeg</image>
+        <niveau>2ème année IDSD</niveau>
+        <dateNaissance>2000-06-10</dateNaissance>
+        <email>adem.taktek@example.com</email>
+        <linkedin>https://www.linkedin.com/in/adem-taktek</linkedin>
+        <instagram>https://www.instagram.com/adem.taktek</instagram>
+        <facebook>https://www.facebook.com/adem.taktek</facebook>
+        <matieres>
+            <matiere>
+                <nom>Developpement Web</nom>
+                <note>14</note>
+            </matiere>
+            <matiere>
+                <nom>Theorie de l'incertain</nom>
+                <note>13</note>
+            </matiere>
+            <matiere>
+                <nom>Java</nom>
+                <note>15</note>
+            </matiere>
+            <matiere>
+                <nom>Langage C</nom>
+                <note>14</note>
+            </matiere>
+            <matiere>
+                <nom>AI</nom>
+                <note>15</note>
+            </matiere>
+            <matiere>
+                <nom>Modele Lineaire</nom>
+                <note>14</note>
+            </matiere>
+            <matiere>
+                <nom>Analyse Numerique</nom>
+                <note>13</note>
+            </matiere>
+            <matiere>
+                <nom>Programmation Lineaire</nom>
+                <note>14</note>
+            </matiere>
+        </matieres>
+    </etudiant>
+    <etudiant id="5" niveau="2">
+        <nom>Adem Ghorbel</nom>
+        <moyenne>15.8</moyenne>
+        <image>../assets/images/ghorbel.png</image>
+        <niveau>2ème année IDSD</niveau>
+        <dateNaissance>2000-07-15</dateNaissance>
+        <email>adem.ghorbel@example.com</email>
+        <linkedin>https://www.linkedin.com/in/adem-ghorbel</linkedin>
+        <instagram>https://www.instagram.com/adem.ghorbel</instagram>
+        <facebook>https://www.facebook.com/adem.ghorbel</facebook>
+        <matieres>
+            <matiere>
+                <nom>Developpement Web</nom>
+                <note>14</note>
+            </matiere>
+            <matiere>
+                <nom>Theorie de l'incertain</nom>
+                <note>13</note>
+            </matiere>
+            <matiere>
+                <nom>Java</nom>
+                <note>15</note>
+            </matiere>
+            <matiere>
+                <nom>Langage C</nom>
+                <note>14</note>
+            </matiere>
+            <matiere>
+                <nom>AI</nom>
+                <note>15</note>
+            </matiere>
+            <matiere>
+                <nom>Modele Lineaire</nom>
+                <note>14</note>
+            </matiere>
+            <matiere>
+                <nom>Analyse Numerique</nom>
+                <note>13</note>
+            </matiere>
+            <matiere>
+                <nom>Programmation Lineaire</nom>
+                <note>14</note>
+            </matiere>
+        </matieres>
+    </etudiant>
+    <etudiant id="6" niveau="2">
+        <nom>Adem Khabou</nom>
+        <moyenne>20</moyenne>
+        <image>../assets/images/dhia.jpeg</image>
+        <niveau>2ème année IDSD</niveau>
+        <dateNaissance>2000-08-20</dateNaissance>
+        <email>adem.khabou@example.com</email>
+        <linkedin>https://www.linkedin.com/in/adem-khabou</linkedin>
+        <instagram>https://www.instagram.com/adem.khabou</instagram>
+        <facebook>https://www.facebook.com/adem.khabou</facebook>
+        <matieres>
+            <matiere>
+                <nom>Developpement Web</nom>
+                <note>14</note>
+            </matiere>
+            <matiere>
+                <nom>Theorie de l'incertain</nom>
+                <note>13</note>
+            </matiere>
+            <matiere>
+                <nom>Java</nom>
+                <note>15</note>
+            </matiere>
+            <matiere>
+                <nom>Langage C</nom>
+                <note>14</note>
+            </matiere>
+            <matiere>
+                <nom>AI</nom>
+                <note>15</note>
+            </matiere>
+            <matiere>
+                <nom>Modele Lineaire</nom>
+                <note>14</note>
+            </matiere>
+            <matiere>
+                <nom>Analyse Numerique</nom>
+                <note>13</note>
+            </matiere>
+            <matiere>
+                <nom>Programmation Lineaire</nom>
+                <note>14</note>
+            </matiere>
+        </matieres>
+    </etudiant>
+    <etudiant id="7" niveau="3">
+        <nom>Atta Hillali</nom>
+        <moyenne>17.0</moyenne>
+        <image>../assets/images/dhia.jpeg</image>
+        <niveau>3ème année IDSD</niveau>
+        <dateNaissance>1999-05-10</dateNaissance>
+        <email>atta.hillali@example.com</email>
+        <linkedin>https://www.linkedin.com/in/atta-hillali</linkedin>
+        <instagram>https://www.instagram.com/atta.hillali</instagram>
+        <facebook>https://www.facebook.com/atta.hillali</facebook>
+        <matieres>
+            <matiere>
+                <nom>Developpement Web</nom>
+                <note>14</note>
+            </matiere>
+            <matiere>
+                <nom>Theorie de l'incertain</nom>
+                <note>13</note>
+            </matiere>
+            <matiere>
+                <nom>Java</nom>
+                <note>15</note>
+            </matiere>
+            <matiere>
+                <nom>Langage C</nom>
+                <note>14</note>
+            </matiere>
+            <matiere>
+                <nom>AI</nom>
+                <note>15</note>
+            </matiere>
+            <matiere>
+                <nom>Modele Lineaire</nom>
+                <note>14</note>
+            </matiere>
+            <matiere>
+                <nom>Analyse Numerique</nom>
+                <note>13</note>
+            </matiere>
+            <matiere>
+                <nom>Programmation Lineaire</nom>
+                <note>14</note>
+            </matiere>
+        </matieres>
+    </etudiant>
+    <etudiant id="8" niveau="3">
+        <nom>Rami Ayouni</nom>
+        <moyenne>16.5</moyenne>
+        <image>../assets/images/dhia.jpeg</image>
+        <niveau>3ème année IDSD</niveau>
+        <dateNaissance>1999-06-15</dateNaissance>
+        <email>rami.ayouni@example.com</email>
+        <linkedin>https://www.linkedin.com/in/rami-ayouni</linkedin>
+        <instagram>https://www.instagram.com/rami.ayouni</instagram>
+        <facebook>https://www.facebook.com/rami.ayouni</facebook>
+        <matieres>
+            <matiere>
+                <nom>Developpement Web</nom>
+                <note>14</note>
+            </matiere>
+            <matiere>
+                <nom>Theorie de l'incertain</nom>
+                <note>13</note>
+            </matiere>
+            <matiere>
+                <nom>Java</nom>
+                <note>15</note>
+            </matiere>
+            <matiere>
+                <nom>Langage C</nom>
+                <note>14</note>
+            </matiere>
+            <matiere>
+                <nom>AI</nom>
+                <note>15</note>
+            </matiere>
+            <matiere>
+                <nom>Modele Lineaire</nom>
+                <note>14</note>
+            </matiere>
+            <matiere>
+                <nom>Analyse Numerique</nom>
+                <note>13</note>
+            </matiere>
+            <matiere>
+                <nom>Programmation Lineaire</nom>
+                <note>14</note>
+            </matiere>
+        </matieres>
+    </etudiant>
+    <etudiant id="9" niveau="3">
+        <nom>Khadija Kriaa</nom>
+        <moyenne>17.3</moyenne>
+        <image>../assets/images/dhia.jpeg</image>
+        <niveau>3ème année IDSD</niveau>
+        <dateNaissance>1999-07-20</dateNaissance>
+        <email>khadija.kriaa@example.com</email>
+        <linkedin>https://www.linkedin.com/in/khadija-kriaa</linkedin>
+        <instagram>https://www.instagram.com/khadija.kriaa</instagram>
+        <facebook>https://www.facebook.com/khadija.kriaa</facebook>
+        <matieres>
+            <matiere>
+                <nom>Developpement Web</nom>
+                <note>14</note>
+            </matiere>
+            <matiere>
+                <nom>Theorie de l'incertain</nom>
+                <note>13</note>
+            </matiere>
+            <matiere>
+                <nom>Java</nom>
+                <note>15</note>
+            </matiere>
+            <matiere>
+                <nom>Langage C</nom>
+                <note>14</note>
+            </matiere>
+            <matiere>
+                <nom>AI</nom>
+                <note>15</note>
+            </matiere>
+            <matiere>
+                <nom>Modele Lineaire</nom>
+                <note>14</note>
+            </matiere>
+            <matiere>
+                <nom>Analyse Numerique</nom>
+                <note>13</note>
+            </matiere>
+            <matiere>
+                <nom>Programmation Lineaire</nom>
+                <note>14</note>
+            </matiere>
+        </matieres>
+    </etudiant>
+</etudiants>

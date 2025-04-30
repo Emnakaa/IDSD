@@ -20,7 +20,7 @@ nav {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1000; /* Ensure the header is above other content */
+    z-index: 1000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 .nav a.active {
@@ -64,14 +64,14 @@ nav .logo_container{
     height:auto; 
 }
 .logo{
-    width: 20%;
+    width: 22%;
     height: auto;
 }
 
 
 /* 
 ---------------------------------------------
-banner Style
+carrousell Style
 --------------------------------------------- 
 */
 .carousel {
@@ -104,7 +104,7 @@ banner Style
     text-align: center;
     width: 80%;
     max-width: 800px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(1, 0, 48, 0.5);
     padding: 20px;
     border-radius: 10px;
 }
@@ -342,9 +342,7 @@ KPIS Style
   }
   
 
-
-  
-/* Hero Image Section */
+/* ------------------------partie chiffres clé-------------  */
 .hero-image {
     position: relative;
     height:350px;
@@ -374,7 +372,7 @@ KPIS Style
   }
   
   
-  /* Left Red Box */
+  /* Left Box */
   .stats-title-box {
     background: linear-gradient(to bottom, #1e3868, #14a1e2);;
     color: white;
@@ -439,7 +437,7 @@ KPIS Style
     letter-spacing: 1px;
     font-size: 0.9rem;
   }
-  
+
   .overlap-caption {
     position: absolute;
     bottom: 20%;
@@ -465,7 +463,7 @@ KPIS Style
 }
 
 
-
+/* -----------------------------niveau de formation --------------------*/
 .image-grid {
     display: flex;
     gap: 20px;
@@ -553,5 +551,94 @@ KPIS Style
 
 
 
+/* Footer Styling */
 
+.contact .fas {
+  font-size: 20px; /* Larger size for stats icons */
+  color: #0099ff; /* Specific color for stats icons */
+  margin-bottom: 15px; /* Space below the icon */
+}
+.footer-area {
+  background-color: #020141; /* Couleur de fond sombre */
+  color: #ecf0f1; /* Texte clair */
+  padding: 40px 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #0070d8; /* Couleur d'accent */
+  text-transform: uppercase;
+}
+
+.footer-section p,
+.footer-section ul {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #ecf0f1;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #0070d8; /* Couleur d'accent au survol */
+}
+
+.footer-section .contact p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-section .contact i {
+  color: #0070d8;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 12px;
+  border-top: 1px solid #00173a;
+  padding-top: 10px;
+  color: #bdc3c7;
+}
+
+.footer-bottom p {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    text-align: center;
+  }
+}
 
